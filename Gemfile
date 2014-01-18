@@ -32,6 +32,10 @@ gem 'poltergeist'
 
 gem 'resque'
 
+group :development do
+  gem 'spring'
+end
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

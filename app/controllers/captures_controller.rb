@@ -3,5 +3,6 @@ class CapturesController < ApplicationController
   end
 
   def index
+    @captures = Capture.all.order('created_at DESC')
   end
 end

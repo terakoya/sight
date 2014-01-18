@@ -1,2 +1,8 @@
-<h1>Captures#index</h1>
-<p>Find me in app/views/captures/index.html.erb</p>
+<%= form_tag orders_path do %>
+  <%= text_field_tag 'url' %>
+  <%= submit_tag 'Order' %>
+<% end %>
+
+<h3>Captures</h3>
+
+

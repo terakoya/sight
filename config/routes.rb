@@ -1,4 +1,8 @@
 Sight::Application.routes.draw do
+  get "orders/create"
+  get "orders/index"
+  resources :captures, only: %i(show index)
+  resources :orders, only: %i(create index)
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
